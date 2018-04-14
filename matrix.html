@@ -1,0 +1,5 @@
+<!DOCTYPE html><html lang="en"><html><head><style  type="text/css">
+*{margin:0;padding:0}body{background:#000}canvas{display:block}
+</style></head><body><canvas id="c"></canvas><script>
+var c=document.getElementById("c"),ctx=c.getContext("2d");c.height=window.innerHeight,c.width=window.innerWidth;var matrix="11010011011100011010111001000";matrix=matrix.split("");for(var font_size=20,columns=c.width/font_size,drops=[],x=0;x<columns;x++)drops[x]=1;function draw(){ctx.fillStyle="rgba(0, 0, 0, 0.04)",ctx.fillRect(0,0,c.width,c.height),ctx.fillStyle="#0F0",ctx.font=font_size+"px arial";for(var t=0;t<drops.length;t++){var i=matrix[Math.floor(Math.random()*matrix.length)];ctx.fillText(i,t*font_size,drops[t]*font_size),drops[t]*font_size>c.height&&Math.random()>.975&&(drops[t]=0),drops[t]++}}setInterval(draw,35); </script>
+</body></html>
