@@ -1,31 +1,19 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Text Animeted </title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="keywords" content="Text Animeted"/>
-<meta property="og:title" content="Text Animeted"/>
-<meta property="og:type" content="website"/>
-<meta name="description" content="wikitv.tk"> 
-<meta property="og:description" content="wikitv.tk"/>
-<meta name="author" content="khaled star"/>
-<meta name="robots" content="index, follow"/>
-<meta property="og:url" content="http://www.wikitv.tk/"/>
-<meta property="og:image" content="/img/tv.png"/>
-<link rel="image_src" href="/img/tv.png">
-<link  href='/img/tv.png'  rel='apple-touch-icon-precomposed'/>
-<link rel="canonical" href="http://www.wikitv.tk/" /> 
-<style  type="text/css">body {background: #111111 url(//1.bp.blogspot.com/-emL61b0Pksw/WcZS4O5kOmI/AAAAAAAAGPE/AHVTlvd3ijY5QpQKjLCeiuEHdDzhsr2JgCK4BGAYYCw/s0/IMG_3209.JPG) repeat fixed top left;}
-#printText {font-family: arial ; color: red;}
-</style></head><body><center><big><big><big><h1><div id="printText"></div></h1></big></big></big>
-<script  type='text/javascript'>
-var text = " السلام عليكم ورحمة الله وبركاته ";
-var textArr = text.split("");
-var loopTimer; 
-function typewriter() {
-if(textArr.length > 0) 
-{ document.getElementById("printText").innerHTML += textArr.shift();     
-} else {         
-clearTimeout(loopTimer); 
-return false;     }     
-loopTimer = setTimeout('typewriter()',25); } typewriter(); 
-</script></center></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>سيرفرات المشاهدة للموقع</title>
+<style type='text/css'>
+.w3-btn,.w3-btn:link,.w3-btn:visited{color:#fff;background-color:#17d803;}.w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}a:active,a:hover{outline-width:0}.w3-btn,
+.w3-button{-moz-user-select:none;
+border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;text-align:center;cursor:pointer;white-space:nowrap}
+a{}*,::before,::after{box-sizing:inherit}
+</style><center><h1>سيرفرات المشاهدة للموقع</h1>
+<a class="w3-btn" href="http://www.wikitv.tk/live/2m" target="someFrame">Server 1</a>
+<a class="w3-btn" href="http://www.elahmad.com/tv/embed.php?id=2MMaroc" target="someFrame">Server  2</a>
+<a class="w3-btn" href="http://bomtv.gitlab.io/live/2m.html" target="someFrame">Server 3</a>
+<a class="w3-btn" href="http://playtv.fr/player/embed/2m-maroc/" target="someFrame">Server 4</a>
+<a class="w3-btn" href="http://www.arabe-media.com/iframe/iframe-100.php" target="someFrame">Server 5</a>
+<a class="w3-btn" href="http://iptv-planet.com/2m.html" target="someFrame">Server 6</a>
+<br><br>
+<iframe allowfullscreen="true" scrolling="no" src="http://www.wikitv.tk/live/2m.html" name="someFrame" id="someFrame" 
+width="700" height="400"></iframe>
+<h1>سيرفرات المشاهدة للموقع</h1></center>
+<script>$(document).ready(function(){ $("a").click(function(e) { e.preventDefault();
+$("#someFrame").attr("src", $(this).attr("href"));  })  });</script></body></html>
