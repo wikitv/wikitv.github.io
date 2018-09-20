@@ -1,14 +1,43 @@
-﻿<!DOCTYPE html> <html><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"> <title>Single page template</title> 
+<!DOCTYPE html> <html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <title>Single page template</title>
+<style  type="text/css">
+.embedresize {
+max-width: 700px;
+margin: auto;}
+.embedresize div {
+position: relative;
+height: 0;
+padding-bottom: 56.25%;}
+.embedresize iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;}
+.intro #intro .embedresize iframe,
+.exit .quizz .embedresize iframe,
+.alreadyplayed #intro .embedresize iframe,
+.identityset #intro .embedresize iframe,
+#notabene .embedresize iframe,
+#message_intro .embedresize iframe,
+.fancybox_body .embedresize iframe,
+#comments .embedresize iframe,
+#description .embedresize iframe,
+.alreadyplayed .embedresize iframe,
+#adserver .embedresize iframe {
+max-width: none !important;}</style>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head> <body> <div data-role="page" id="page1">
 <div data-role="header"><h1>Www.WikiTv.Tk</h1></div>
-<div data-role="content"><h1>Live Tv</h1><div data-role="iframe">
-<iframe allowfullscreen="true" height="400" width="100%"
-src="http://bomtv.gitlab.io/live/dubai-one.html"  
- allowtransparency="true" scrolling="no" frameborder="0"></iframe></div>
+<div data-role="content"><h1>Live Tv</h1>
+<script> if($(window).width() <= 700) {
+window.location = "http://www.html-editor.tk/test/m"; } </script>
+<div class="embedresize"><div>
+<iframe name="myifram" allowfullscreen="allowfullscreen" scrolling="no" rel="nofollow" 
+src="http://bomtv.gitlab.io/live/dubai-one.html" width="700" height="400" frameborder="0"></iframe></div></div>
 <p><a href="testa.cfm" data-role="button">Load bad</a></p>          
 <p><a href="test2.cfm" data-role="button">Load good</a></p> </div>
 <div data-role="footer"><h4>Footer content</h4></div>  </div></body></html>
